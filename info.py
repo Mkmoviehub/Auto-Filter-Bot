@@ -119,7 +119,7 @@ if len(BIN_CHANNEL) == 0:
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "http://prior-mabel-mkbots-8ce9a0b8.koyeb.app/)
+URL = environ.get("URL", "https://t.me/Mk_movies_hub")
 if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
