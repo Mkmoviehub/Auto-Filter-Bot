@@ -119,12 +119,12 @@ if len(BIN_CHANNEL) == 0:
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "-1001903883684")
+URL = environ.get("URL", "http://prior-mabel-mkbots-8ce9a0b8.koyeb.app/)
 if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
 else:
-    if URL.startswith(('https://', 'http://')):
+    if URL.startswith(('https://', 'http://prior-mabel-mkbots-8ce9a0b8.koyeb.app/')):
         if not URL.endswith("/"):
             URL += '/'
     elif is_valid_ip(URL):
