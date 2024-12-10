@@ -113,13 +113,13 @@ OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'gift.cardseller@axl')
 
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', False)
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "")
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1001903883684")
 if len(BIN_CHANNEL) == 0:
     print('Error - BIN_CHANNEL is missing, exiting now')
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "")
+URL = environ.get("URL", "-1001903883684")
 if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
