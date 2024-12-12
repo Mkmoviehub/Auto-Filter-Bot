@@ -75,7 +75,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/MKStreamingHub')
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "http://t.me/MKMOVIESHUB_bot/mk1")
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/MKStreamingHub')
-FILMS_LINK = environ.get('FILMS_LINK', '')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/MkAnimewood')
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/mkcinemahub")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/mk_movie_request")
 
