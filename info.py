@@ -37,7 +37,7 @@ PORT = int(environ.get('PORT', '80'))
 PICS = (environ.get('PICS', 'https://envs.sh/4fh.jpg https://envs.sh/4fQ.jpg https://envs.sh/4fE.jpg https://envs.sh/4fD.jpg https://envs.sh/1Pv.jpg')).split()
 
 # Bot Admins
-ADMINS = environ.get('ADMINS', '8185007347')
+ADMINS = environ.get('ADMINS', '8185007347 5797912002')
 if len(ADMINS) == 0:
     print('Error - ADMINS is missing, exiting now')
     exit()
@@ -45,7 +45,7 @@ else:
     ADMINS = [int(admins) for admins in ADMINS.split()]
 
 # Channels
-INDEX_CHANNELS = [int(index_channels) if index_channels.startswith("-") else index_channels for index_channels in environ.get('INDEX_CHANNELS', '').split()]
+INDEX_CHANNELS = [int(index_channels) if index_channels.startswith("-") else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1001677901864').split()]
 if len(INDEX_CHANNELS) == 0:
     print('Info - INDEX_CHANNELS is empty')
 LOG_CHANNEL = environ.get('LOG_CHANNEL', '-1002329914165')
@@ -75,7 +75,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/MKStreamingHub')
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "http://t.me/MKMOVIESHUB_bot/mk1")
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/MKStreamingHub')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/MkAnimewood')
+FILMS_LINK = environ.get('FILMS_LINK', '')
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/mkcinemahub")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/mk_movie_request")
 
@@ -112,7 +112,7 @@ PAYMENT_QR = environ.get('PAYMENT_QR', 'https://envs.sh/1wQ.jpg')
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'gift.cardseller@axl')
 
 # for stream
-IS_STREAM = is_enabled('IS_STREAM', False)
+IS_STREAM = is_enabled('IS_STREAM', True)
 BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1001903883684")
 if len(BIN_CHANNEL) == 0:
     print('Error - BIN_CHANNEL is missing, exiting now')
@@ -124,7 +124,7 @@ if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
 else:
-    if URL.startswith(('https://', 'http://prior-mabel-mkbots-8ce9a0b8.koyeb.app/')):
+    if URL.startswith(('https://', 'https://web-xwfdzxdrddnd.up-de-fra1-k8s-1.apps.run-on-seenode.com/')):
         if not URL.endswith("/"):
             URL += '/'
     elif is_valid_ip(URL):
