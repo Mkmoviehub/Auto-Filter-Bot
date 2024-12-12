@@ -112,7 +112,7 @@ PAYMENT_QR = environ.get('PAYMENT_QR', 'https://envs.sh/1wQ.jpg')
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'gift.cardseller@axl')
 
 # for stream
-IS_STREAM = is_enabled('IS_STREAM', True)
+IS_STREAM = is_enabled('IS_STREAM', False)
 BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1001903883684")
 if len(BIN_CHANNEL) == 0:
     print('Error - BIN_CHANNEL is missing, exiting now')
