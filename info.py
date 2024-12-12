@@ -34,7 +34,7 @@ if len(BOT_TOKEN) == 0:
 PORT = int(environ.get('PORT', '80'))
 
 # Bot pics
-PICS = (environ.get('PICS', 'https://telegra.ph/file/58fef5cb458d5b29b0186.jpg https://telegra.ph/file/f0aa4f433132769f8970c.jpg https://telegra.ph/file/f515fbc2084592eca60a5.jpg https://telegra.ph/file/20dbdcffaa89bd3d09a74.jpg https://telegra.ph/file/6045ba953af4def846238.jpg')).split()
+PICS = (environ.get('PICS', 'https://envs.sh/4fh.jpg https://envs.sh/4fQ.jpg https://envs.sh/4fE.jpg https://envs.sh/4fD.jpg https://envs.sh/1Pv.jpg')).split()
 
 # Bot Admins
 ADMINS = environ.get('ADMINS', '8185007347')
@@ -72,12 +72,12 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/HA_Bots_Support')
-OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/Hansaka_Anuhas")
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/HA_Bots')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/HA_Films_World')
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/HA_Bots")
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/HA_Bots")
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/MKStreamingHub')
+OWNER_USERNAME = environ.get("OWNER_USERNAME", "http://t.me/MKMOVIESHUB_bot/mk1")
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/MKStreamingHub')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/indianpremiumstores')
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/mkcinemahub")
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/mk_movie_request")
 
 # Bot settings
 DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds
@@ -112,7 +112,7 @@ PAYMENT_QR = environ.get('PAYMENT_QR', 'https://envs.sh/1wQ.jpg')
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'gift.cardseller@axl')
 
 # for stream
-IS_STREAM = is_enabled('IS_STREAM', False)
+IS_STREAM = is_enabled('IS_STREAM', True)
 BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1001903883684")
 if len(BIN_CHANNEL) == 0:
     print('Error - BIN_CHANNEL is missing, exiting now')
